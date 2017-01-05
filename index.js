@@ -9,7 +9,7 @@ var client = new elasticsearch.Client({
   log: 'trace'
 });
 
-var SERVICE_ACCOUNT_EMAIL = 'ga-607@isa2017-154510.iam.gserviceaccount.com';
+var SERVICE_ACCOUNT_EMAIL = 'XXXXXX@XXXXX';
 var SERVICE_ACCOUNT_KEY_FILE = __dirname + '/google.pem';
 
 
@@ -28,7 +28,7 @@ authClient.authorize(function(err, tokens) {
 
     analytics.data.ga.get({ 
         auth: authClient,
-        'ids': 'ga:82818154',
+        'ids': 'ga:82XXXXXXXX',
         'start-date': '2016-01-19',
         'end-date': '2016-01-19',
         'metrics': 'ga:avgServerConnectionTime,ga:avgPageLoadTime,ga:avgServerResponseTime',
